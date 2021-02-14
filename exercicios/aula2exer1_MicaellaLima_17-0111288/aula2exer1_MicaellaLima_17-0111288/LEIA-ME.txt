@@ -1,0 +1,8 @@
+Aula 2 Exercício 1
+Micaella Lorraine Gouveia de Lima - 17/0111288
+
+Para rodar o programa, é necessário ter a pasta "./files" com os arquivos "pessoas.csv" e "carros.csv" criados
+Já deixei eles criados no ZIP, então é só compilar(gcc) e rodar o programa principal (aula2exer1_MicaellaLima_17-0111288.c).
+
+Fiz a ordenação dos carros pela chave primária RENAVAM.
+E a ordenação das pessoas é feita pela chave primária CPF.
