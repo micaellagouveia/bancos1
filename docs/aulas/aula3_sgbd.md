@@ -11,6 +11,7 @@ Para o contexto de BD: não se considerar a forma como os dados são armazenados
 
 **Manipulação** do BD inclui funções como consultar por dados específicos e atualizar para refletir as atlerações possíveis no mundo real.
 
+**METADADO = DICIONÁRIO E CATÁLOGO**
 
 ## Dado x Informação
 * **Dado**: fato que pode ser registrado e possui significado implícto.
@@ -36,7 +37,7 @@ Para o contexto de BD: não se considerar a forma como os dados são armazenados
 ### Características relevantes
 
 * **Controle sobre a redundância**
-  * Espaço para armezamento
+  * Espaço para armazenamento
   * Duplicação de esforços
   * Inconsistência na base de dados
 
