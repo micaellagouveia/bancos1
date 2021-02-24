@@ -22,3 +22,35 @@ O dado que é associado a cada ocorrência de uma entidade ou um relacionamento.
 * Uma Entidade é representada por um único ou vários (conjuntos) atributos.
 * Para cada atributo existe um conjunto ded valores permitidos, chamado **domínio** daquele atributo.
 * O atributo mapeia uma entidade em um domínio.
+
+## Chave
+Um ou mais atributos que permitem identificar unicamente uma entidade no conjunto de registros da entidade.
+* **Chave Candidata**: é o atributo, ou a composição de mais que um atributo, que pode identificar unicamente uma entidade.
+* **Chave Primária**: define a chave candidata escolhida pelo projetista de dados para identificar unicamente os registros em uma entidade
+
+## Cardinalidade
+Restrição de mapeamento que expressa o número de entidades as quais outra entidade pode er associada via um conjunto de relacionemntos.
+
+![relacionamentos](./relacionamentos.png)
+
+## Notação utilizada no DE-R
+
+![not](./not1.png)
+![not](./not2.png)
+
+## Generalização e Especialização
+* Generalização: usada para enfatizar as semelhanças entre tipos de entidades de nível superior e ocultar suas diferenças.
+* Especialização: consiste na identificação de subgrupos de entidades que são, de alguma forma, diferentes de outras entidades do conjunto.
+
+* Representados por um triângulo, podendo ser:
+  * Total: há pelo menos uma Especialização
+  * Exclusiva: há somente uma única Especialização
+  * Parcial: pode não ter nenhuma Especialização.
+
+## Autorrelacionamento
+Caso particular que pode ser verificado em diversas situações e respeita as cardinalidades, mas envolvendo uma mesma entidade.
+
+## Agregação
+next
+
+
