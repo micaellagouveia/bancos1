@@ -51,6 +51,32 @@ Restrição de mapeamento que expressa o número de entidades as quais outra ent
 Caso particular que pode ser verificado em diversas situações e respeita as cardinalidades, mas envolvendo uma mesma entidade.
 
 ## Agregação
-next
+Uma limitação do MER é que não é possível expressar relacionamentos entre relacionamentos. A agregação ou **entidade associativa** é uma abstração por meio da qual relacionamentos são tratados como entidades de nível superior.
 
+Essa nova entidade surge na representação do DER, permitindo que possa existir um relacionamento ligado a outro.
 
+## Relacionamentos Ternários
+Alguns relacionamentos entre entidades podem ser representadas por relacionamentos ternários, em que a representação no DER é mostrada de forma mais objetiva, mas a implementação física corresponderá a dois relacionamentos.
+
+Relacionamentos ternários apresentam ocorrências de 3 entidades. Só é interessante utilizar este tipo de relacionamento quando realmente for obrigatório associar, ao mesmo tempo, um par de entidade com uma terceira entidade. Quando não ocorre esta obrigatoriedade, recomenda-se o uso da agregação.
+
+A determinação da cardinalidade de um relacionamento ternário é feita questionando um par em relação à terceira entidade envolvida.
+
+## Descrição da Relação
+Descrição do esquema ALUNO:
+>
+> ALUNO (
+>
+> matricula   **numérico(8)**   NÃO NULO,
+>
+> nome        **literal(30)**   NÃO NULO,
+>
+> nascimento  **data**          NÃO NULO,
+>
+> cpf         **numérico(11)**, 
+>
+> telefone    **numérico(12)**,
+>
+> restrição ALUNO_PK de Chave Primária (matricula),
+>
+> );
