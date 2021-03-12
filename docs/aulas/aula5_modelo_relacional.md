@@ -39,3 +39,30 @@ Informalmente, um relação pode ser considerada como uma *tabela de valores*, e
     * Atributos multivalorados são representados por
 meio de uma outra relação;
     * Atributos compostos são pelos seus componentes.
+
+
+## Chaves e Restrições de Integridade Relacional
+* Como não pode ter uma tupla repetida em uma instância da relação, é necessário identificar um atributo ou mais que terá a responsabilidade de identificar *unicamente* cada tupla. Este atributo, ou conjunto de atributos, pe chamado de **CHAVE DA RELAÇÃO**.
+
+A definição dessa chave será **CHAVE PRIMÁRIA (COMPOSTA)** da relação.
+
+## Restrições de Integridade
+* **de Chaves**: cada atributo das chaves candidatas deve possuir *valor único* em todas as tuplas da relação.
+* **de Entidade**: uma chave primária *não* pode assumir valor *nulo* nas tuplas da relação.
+* **Referencial**: inclusão de atributo(s) de uma relação que referencia outra tupla em outra relação, surgindo um novo *tipo de chave - estrangeira*.
+* **de Integridade Semântica**: se referem mais especificamente sobre *valores ou características que determinados atributos podem possuir* no contexto de uma determinada aplicação. (ex: sexo)
+* **de Participação**: determina que a existência de uma entidade depende de sua participação em um tipo de relacionamento.
+
+### Restrição de participação
+Existem dois tipos: TOTAL e PARCIAL.
+* **Total**: está estreitamente relacionada a *dependência de existência*.
+    * Exemplo: Suponha que um empregado deve trabalhar em um departamento, ou seja, não existem empregados que não estejam vinculados a algum departamento. Assim, uma entidade do tipo EMPREGADO existe somente se ela participa em uma instância de relacionamento *trabalha*.
+
+    ![total](./total.png)
+
+* **Parcial**: não estás ligado à uma relação de dependência de existência.
+    * Exemplo: o tipo de relacionamento *gerencia*, o qual envolve os tipos de entidade EMPREGADO e DEPARTAMENTO. A participação do tipo de entidade EMPREGADO é parcial, pois somente alguns empregados gerenciam departamentos, o que não limita a existência dos demais empregados.
+
+    ![parcial](./parcial.png)
+
+
