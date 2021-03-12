@@ -31,7 +31,7 @@ A organização dos registros armazenados dentro de um arquivo pode ser variada 
 * Velocidade
 * Capacidade de armazenamento
 
-![memorias](./memorias.png)
+![memorias](./img/memorias.png)
 
 
 * **Primárias**: mais rápidas, mas há perda de dados com falta de energia (volátil)
@@ -60,9 +60,9 @@ A organização dos registros armazenados dentro de um arquivo pode ser variada 
 * Indicado para uso em aplicações com atualizações arbitrárias.
 
 | Tipo de Arquivo | Principal Vantagem | Principal Desvantagem |
-| - | - | - |
-|Sequencial | Acessos sequenciais mais eficientes | Operações de modificações mais complexas |
-| Sequencial indexado| usam índices que agilizam a consulta e parmanecem em memória | Necessidade de áreas extensão que ainda precisam ser reorganizadas |
+|-----------------|--------------------|-----------------------|
+| Sequencial | Acessos sequenciais mais eficientes | Operações de modificações mais complexas |
+| Sequencial indexado | usam índices que agilizam a consulta e parmanecem em memória | Necessidade de áreas extensão que ainda precisam ser reorganizadas |
 | Direto | Acesso direto, sem necessidade do índice (menor espaço ocupado) | É necessário determinar funções que gerem menor número de colisões |
 
 ## Operações algorítmicas sobre arquivos

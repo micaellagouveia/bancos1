@@ -31,12 +31,12 @@ Um ou mais atributos que permitem identificar unicamente uma entidade no conjunt
 ## Cardinalidade
 Restrição de mapeamento que expressa o número de entidades as quais outra entidade pode er associada via um conjunto de relacionemntos.
 
-![relacionamentos](./relacionamentos.png)
+![relacionamentos](./img/relacionamentos.png)
 
 ## Notação utilizada no DE-R
 
-![not](./not1.png)
-![not](./not2.png)
+![not](./img/not1.png)
+![not](./img/not2.png)
 
 ## Generalização e Especialização
 * Generalização: usada para enfatizar as semelhanças entre tipos de entidades de nível superior e ocultar suas diferenças.

@@ -2,7 +2,7 @@
 
 **Modelo de Dados** é um conjunto de conceitos utlizados para descrever a estrutura de um banco de dados. É a principal ferramenta no fornecimento de informações sobre a abstração efetuada.
 
-![modelos](./implementacao.png)
+![modelos](./img/implementacao.png)
 
 ### Esquema
 * Descrição da organização dos dados de m BD.
@@ -20,16 +20,16 @@ Informalmente, um relação pode ser considerada como uma *tabela de valores*, e
 ### Terminologia do Modelo Relacional
 
 | Nome | Descrição |
-| - | - |
+|------|-----------|
 | Tupla | linha da tabela |
 | Relação | Tabela |
 | Atributo | nome da coluna |
 | Domínio | conjunto de valores que cada atributo pode assumir em uma relação |
-| Esquema | conjunto de atributos que descreve as características dos elementos da relação|
+| Esquema | conjunto de atributos que descreve as características dos elementos da relação |
 
 * A quantidade de atributos em uma relação é denominado **Grau da Relação**.
 
-![fornecedor](./fornecedor.png)
+![fornecedor](./img/fornecedor.png)
 
 ## Características das Relações (tabelas)
 * Não há tuplas duplicadas em uma relação.
@@ -58,11 +58,11 @@ Existem dois tipos: TOTAL e PARCIAL.
 * **Total**: está estreitamente relacionada a *dependência de existência*.
     * Exemplo: Suponha que um empregado deve trabalhar em um departamento, ou seja, não existem empregados que não estejam vinculados a algum departamento. Assim, uma entidade do tipo EMPREGADO existe somente se ela participa em uma instância de relacionamento *trabalha*.
 
-    ![total](./total.png)
+    ![total](./img/total.png)
 
 * **Parcial**: não estás ligado à uma relação de dependência de existência.
     * Exemplo: o tipo de relacionamento *gerencia*, o qual envolve os tipos de entidade EMPREGADO e DEPARTAMENTO. A participação do tipo de entidade EMPREGADO é parcial, pois somente alguns empregados gerenciam departamentos, o que não limita a existência dos demais empregados.
 
-    ![parcial](./parcial.png)
+    ![parcial](./img/parcial.png)
 
 

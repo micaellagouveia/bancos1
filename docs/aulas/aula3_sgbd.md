@@ -90,4 +90,4 @@ Para o contexto de BD: não se considerar a forma como os dados são armazenados
 * O catálogo do sistema (metadados) contém definições da estrutura de cada arquivo, tipo de dado e formato de armazenamento de cada item de dados, além de várias possíveis restrições coerentes com as exigências dos dados no mundo real.
 * Este catálogo ou dicionário, é usado pelo SGBD e ocasionalmente por algum usuário do BD. 
 
-![sgbd](./sgbd.png)
+![sgbd](./img/sgbd.png)
