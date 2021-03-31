@@ -7,6 +7,8 @@
 ### [Aula 4  - MER e DER](aulas/aula4_mer_der.md)
 ### [Ferramentas CASE](aulas/ferramentas_CASE.md)
 ### [Aula 5 - Modelo Relacional de Dados](aulas/aula5_modelo_relacional.md)
+### [Aula 7 - Álgebra Relacional](aulas/aula7_algebra.md)
+### [Aula 8 - Consistência, Dependência Funcional e Normalização](aulas/aula8_normalizacao.md)
 ### [Scripts](aulas/scripts.md)
 
 ## Estudos
