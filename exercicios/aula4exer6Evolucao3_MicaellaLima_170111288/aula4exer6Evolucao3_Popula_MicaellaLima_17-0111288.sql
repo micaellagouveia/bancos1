@@ -1,0 +1,407 @@
+-- --------     << DETRAN >>     ------------
+-- 
+-- SCRIPT DE POPULAR (DML)
+-- 
+-- Data Criacao ...........: 22/03/2021
+-- Autor(es) ..............: Micaella Lorraine Gouveia de Lima
+-- Banco de Dados .........: MySQL 8.0.23
+-- Banco de Dados(nome) ...: aula4exer6Evolucao3
+-- 
+-- PROJETO => 01 Base de Dados
+--         => 09 Tabelas
+-- -----------------------------------------------------------------
+
+USE aula4exer6Evolucao3;
+
+INSERT INTO MODELO VALUES (
+	NULL,
+	'FIAT  PUNTO'
+);
+
+INSERT INTO MODELO VALUES (
+	NULL,
+	'HONDA PCX'
+);
+
+INSERT INTO MODELO VALUES (
+	NULL,
+	'GOL MI'
+);
+
+INSERT INTO MODELO VALUES (
+	NULL,
+	'FORD FIESTA'
+);
+
+INSERT INTO MODELO VALUES (
+	NULL,
+	'NISSAN TIIDA'
+);
+
+INSERT INTO MODELO VALUES (
+	NULL,
+	'UNO MI'
+);
+
+INSERT INTO CATEGORIA VALUES (
+	NULL,
+	'AUTOMOVEL'
+);
+
+INSERT INTO CATEGORIA VALUES (
+	NULL,
+	'MOTOCICLETA'
+);
+
+INSERT INTO CATEGORIA VALUES (
+	NULL,
+	'CAMINHAO'
+);
+
+INSERT INTO CATEGORIA VALUES (
+	NULL,
+	'VAN'
+);
+
+INSERT INTO CATEGORIA VALUES (
+	NULL,
+	'JIPE'
+);
+
+INSERT INTO CATEGORIA VALUES (
+	NULL,
+	'ONIBUS'
+);
+
+INSERT INTO PROPRIETARIO VALUES (
+	'91177612046',
+	'Carlos Alberto',
+	'Masculino',
+	'1999-11-30',
+	'DF',
+	'Brasilia',
+	'Taguatinga',
+	'Casa 4A'
+);
+
+INSERT INTO PROPRIETARIO VALUES (
+	'43948508003',
+	'Ana Maria Braga',
+	'Feminino',
+	'1999-09-30',
+	'DF',
+	'Brasilia',
+	'Asa Sul',
+	'Casa 023'
+);
+
+INSERT INTO PROPRIETARIO VALUES (
+	'52419338081',
+	'Laura Fernandes',
+	'Feminino',
+	'1989-10-30',
+	'PE',
+	'Recife',
+	'Caruaru',
+	'Ao lado do Horto Florestal'
+);
+
+INSERT INTO PROPRIETARIO VALUES (
+	'91177644046',
+	'Paula Ferreira Souza',
+	'Feminino',
+	'2000-12-30',
+	'DF',
+	'Brasilia',
+	'Taguatinga',
+	'Casa 450'
+);
+
+INSERT INTO PROPRIETARIO VALUES (
+	'43948808403',
+	'Maria Clara Dias',
+	'Feminino',
+	'1970-04-10',
+	'DF',
+	'Brasilia',
+	'Asa Sul',
+	'Apt 705'
+);
+
+INSERT INTO PROPRIETARIO VALUES (
+	'52419334441',
+	'Lorena Chaves',
+	'Feminino',
+	'1988-11-30',
+	'PE',
+	'Recife',
+	'Caruaru',
+	'Casa 5B12'
+);
+
+INSERT INTO telefone VALUES (
+  "43948508003",
+  "61991234567"
+);
+
+INSERT INTO telefone VALUES (
+  "43948508003",
+  "61997234588"
+);
+
+INSERT INTO telefone VALUES (
+  "43948808403",
+  "61991257894"
+);
+
+INSERT INTO telefone VALUES (
+  "91177612046",
+  "619912201367"
+);
+
+INSERT INTO telefone VALUES (
+  "52419334441",
+  "61997225288"
+);
+
+INSERT INTO telefone VALUES (
+  "52419338081",
+  "61991277745"
+);
+
+INSERT INTO VEICULO VALUES (
+  'MNF2224',
+  '2T2BK1BA3CC',
+  'Preto',
+	'2019-01-01',
+  '43948508003',
+	1,
+	1
+);
+
+INSERT INTO VEICULO VALUES (
+  'IAP6484',
+  'HTVBK7BA3HC',
+	'Azul',
+	'2017-01-01',
+	'43948808403',
+	2,
+	2
+);
+
+INSERT INTO VEICULO VALUES (
+	'JUK9504',
+  '2G2BK14A3HC',
+  'Roxo',
+	'2014-01-01',
+	'52419334441',
+	3,
+	3
+);
+
+INSERT INTO VEICULO VALUES (
+  'MNF3334',
+  '2T2BK1BA3CC',
+  'Preto',
+	'2019-01-01',
+  '52419338081',
+	4,
+	4
+);
+
+INSERT INTO VEICULO VALUES (
+  'ICP7779',
+  'HTVBK7DE3GT',
+	'Branco',
+	'2017-01-01',
+	'91177612046',
+	5,
+	5
+);
+
+INSERT INTO VEICULO VALUES (
+	'KUK9504',
+  '2C2BK14A3HC',
+  'Cinza',
+	'2014-01-01',
+	'91177644046',
+	6,
+	6
+);
+
+
+INSERT INTO AGENTE VALUES (
+	123456789,
+	'Fernando Alves',
+	'2015-06-30'
+);
+
+INSERT INTO AGENTE VALUES (
+	987654321,
+	'Gustavo Silva',
+	'2002-06-30'
+);
+
+INSERT INTO AGENTE VALUES (
+	145236897,
+	'Helena Braga',
+	'1987-06-30'
+);
+
+
+INSERT INTO AGENTE VALUES (
+	123457789,
+	'Fernanda Fontes',
+	'2015-10-30'
+);
+
+INSERT INTO AGENTE VALUES (
+	987654333,
+	'Gabriela Souza',
+	'2010-06-30'
+);
+
+INSERT INTO AGENTE VALUES (
+	145777897,
+	'Karen Frota',
+	'2004-10-30'
+);
+
+INSERT INTO LOCAL VALUES (
+	NULL,
+  80,
+	40.71727401,
+	74.00898606
+);
+
+INSERT INTO LOCAL VALUES (
+	NULL,
+  80,
+	33.18726403,
+	84.80898606
+);
+
+INSERT INTO LOCAL VALUES (
+	NULL,
+  60,
+	-83.97747004,
+	43.06848906
+);
+
+INSERT INTO LOCAL VALUES (
+	NULL,
+  80,
+	41.33727401,
+	-78.00798606
+);
+
+INSERT INTO LOCAL VALUES (
+	NULL,
+  60,
+	-33.18776403,
+	-84.80895506
+);
+
+INSERT INTO LOCAL VALUES (
+	NULL,
+  50,
+	-83.97740004,
+	-43.04448906
+);
+
+INSERT INTO TIPOINFRACAO VALUES (
+	NULL,
+  'Dirigir veículo com CNH cassada',
+	1467.35
+);
+
+INSERT INTO TIPOINFRACAO VALUES (
+	NULL,
+  'Dirigir sob influência de álcool',
+	2934.70
+);
+
+INSERT INTO TIPOINFRACAO VALUES (
+	NULL,
+  'Disputar corrida',
+	2934.70
+);
+
+INSERT INTO TIPOINFRACAO VALUES (
+	NULL,
+  'Atravessar sinal vermelho',
+	145.35
+);
+
+INSERT INTO TIPOINFRACAO VALUES (
+	NULL,
+  'Ultrapassar velocidade permitida',
+	134.70
+);
+
+INSERT INTO TIPOINFRACAO VALUES (
+	NULL,
+  'Mexer no celular enquanto dirige',
+	2934.70
+);
+
+
+INSERT INTO INFRACAO VALUES (
+	NULL,
+  '2019-09-28',
+  89,
+	'ICP7779',
+	123456789,
+  1,
+	3
+);
+
+INSERT INTO INFRACAO VALUES (
+	NULL,
+  '2019-09-29',
+  89,
+	'IAP6484',
+	987654321,
+  2,
+	1
+);
+
+INSERT INTO INFRACAO VALUES (
+	NULL,
+  '2019-09-30',
+  89,
+	'JUK9504',
+  145777897,
+	3,
+	2
+);
+
+INSERT INTO INFRACAO VALUES (
+	NULL,
+  '2019-09-28',
+  89,
+	'KUK9504',
+	987654321,
+  6,
+	3
+);
+
+INSERT INTO INFRACAO VALUES (
+	NULL,
+  '2019-09-29',
+  89,
+	'MNF2224',
+	987654321,
+  5,
+	1
+);
+
+INSERT INTO INFRACAO VALUES (
+	NULL,
+  '2019-09-30',
+  89,
+	'MNF3334',
+  987654333,
+	4,
+	2
+);
