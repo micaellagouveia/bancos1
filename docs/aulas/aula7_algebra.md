@@ -48,3 +48,5 @@ Consistem em funções que podem ser aplicadas a valores numéricos. Elas são:
 * Maximum (maior)
 * Minimun (menor)
 
+
+
