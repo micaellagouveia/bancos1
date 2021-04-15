@@ -1,0 +1,101 @@
+-- --------      aula4exer6Evolucao4      ------------
+--
+--                    SCRIPT DE CRIACAO (DDL)
+--
+-- Data Criacao ........... 21/03/2021
+-- Autor(es) .............. Washington Bispo Arishita Junior e Micaella Lorraine Gouveia de Lima
+-- Banco de Dados ......... MySQL
+-- Banco de Dados(nome) ... aula4exer6Evolucao4
+--
+-- Ultimas Alteracoes
+-- 15/04/2021 => Inserção das restrições RESTRICT e CASCADE nas chaves estrangeiras (Micaella)
+--
+-- PROJETO = 01 Base de Dados
+--         = 09 Tabelas
+-- -----------------------------------------------------------------
+ 
+CREATE DATABASE IF NOT EXISTS aula4exer6Evolucao4;
+USE aula4exer6Evolucao4;
+ 
+CREATE TABLE CATEGORIA (
+    idCategoria INT NOT NULL AUTO_INCREMENT,
+    tipoCategoria VARCHAR(30) NOT NULL,
+    CONSTRAINT CATEGORIA_PK PRIMARY KEY (idCategoria)
+) ENGINE = InnoDB AUTO_INCREMENT = 1;
+ 
+CREATE TABLE MODELO (
+    idModelo INT NOT NULL AUTO_INCREMENT,
+    nomeModelo VARCHAR(30) NOT NULL,
+    CONSTRAINT MODELO_PK PRIMARY KEY (idModelo)
+) ENGINE = InnoDB AUTO_INCREMENT = 1;
+ 
+CREATE TABLE PROPRIETARIO (
+    cpf VARCHAR(12) NOT NULL,
+    nome VARCHAR(50) NOT NULL,
+    sexo VARCHAR(1) NOT NULL,
+    dataNascimento DATE NOT NULL,
+    bairro VARCHAR(30) NOT NULL,
+    cidade VARCHAR(30) NOT NULL,
+    estado VARCHAR(2) NOT NULL,
+    CONSTRAINT PROPRIETARIO_PK PRIMARY KEY (cpf)
+) ENGINE = InnoDB;
+ 
+CREATE TABLE TIPO (
+    idTipo INT NOT NULL AUTO_INCREMENT,
+    valor INT NOT NULL,
+    descricao VARCHAR(50) NOT NULL,
+    CONSTRAINT TIPO_PK PRIMARY KEY (idTipo)
+) ENGINE = InnoDB AUTO_INCREMENT = 1;
+ 
+CREATE TABLE LOCAL (
+    idLocal INT NOT NULL AUTO_INCREMENT,
+    latitude FLOAT(5) NOT NULL,
+    longitude FLOAT(5) NOT NULL,
+    velocidadePermitida INT NOT NULL,
+    CONSTRAINT LOCAL_PK PRIMARY KEY (idLocal)
+)  ENGINE=INNODB AUTO_INCREMENT=1;
+ 
+CREATE TABLE AGENTE (
+    matricula INT NOT NULL AUTO_INCREMENT,
+    dataContratacao DATE NOT NULL,
+    nome VARCHAR(50) NOT NULL,
+    CONSTRAINT AGENTE_PK PRIMARY KEY (matricula)
+) ENGINE = InnoDB AUTO_INCREMENT = 1;
+ 
+ 
+CREATE TABLE VEICULO (
+    placa VARCHAR(7) NOT NULL,
+    idCategoria INT NOT NULL,
+    idModelo INT NOT NULL,
+    cpf VARCHAR(12) NOT NULL,
+    chassi VARCHAR(17) NOT NULL UNIQUE,
+    cor VARCHAR(20) NOT NULL,
+    anoFabricacao DATE NOT NULL,
+    CONSTRAINT VEICULO_PK PRIMARY KEY (placa),
+    CONSTRAINT VECIULO_CATEGORIA_FK FOREIGN KEY (idCategoria) REFERENCES CATEGORIA (idCategoria) ON DELETE RESTRICT,
+    CONSTRAINT VEICULO_MODELO_FK FOREIGN KEY (idModelo) REFERENCES MODELO (idModelo) ON DELETE RESTRICT,
+    CONSTRAINT VEICULO_PROPRIETARIO_FK FOREIGN KEY (cpf) REFERENCES PROPRIETARIO (cpf) ON DELETE RESTRICT
+)ENGINE = InnoDB;
+ 
+ 
+CREATE TABLE INFRACAO (
+    idInfracao INT NOT NULL AUTO_INCREMENT,
+    placa VARCHAR(7) NOT NULL,
+    idLocal INT NOT NULL,
+    matricula INT NOT NULL,
+    idTipo INT NOT NULL,
+    dataHora DATETIME NOT NULL,
+    velocidadeMarcada INT NOT NULL,
+	CONSTRAINT INFRACAO_PK PRIMARY KEY (idInfracao),
+    CONSTRAINT INFRACAO_VEICULO_FK FOREIGN KEY (placa) REFERENCES VEICULO(placa) ON DELETE RESTRICT,
+    CONSTRAINT INFRACAO_LOCAL_FK FOREIGN KEY (idLocal) REFERENCES LOCAL(idLocal) ON DELETE RESTRICT,
+    CONSTRAINT INFRACAO_AGENTE_FK FOREIGN KEY (matricula) REFERENCES AGENTE(matricula) ON DELETE RESTRICT,
+    CONSTRAINT INFRACAO_INFRACAO_FK FOREIGN KEY (idTipo) REFERENCES TIPO(idTipo) ON DELETE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 1;
+ 
+CREATE TABLE telefone (
+    cpf VARCHAR(12) NOT NULL,
+    telefone VARCHAR(11) NOT NULL,
+    CONSTRAINT telefone_UK UNIQUE KEY(cpf,telefone),
+    CONSTRAINT telefone_PROPRIETARIO_FK FOREIGN KEY (cpf) REFERENCES PROPRIETARIO (cpf) ON DELETE CASCADE
+)ENGINE = InnoDB;
