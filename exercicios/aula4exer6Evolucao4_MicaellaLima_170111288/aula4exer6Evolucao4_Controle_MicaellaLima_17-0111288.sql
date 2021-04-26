@@ -15,7 +15,7 @@
 USE aula4exer6Evolucao4;
 
 CREATE USER 'admin' IDENTIFIED BY '1admin2';
-GRANT ALL PRIVILEGES ON aula4exer6Evolucao4 . * TO 'admin1';
+GRANT ALL PRIVILEGES ON aula4exer6Evolucao4 . * TO 'admin';
 
 CREATE USER 'pessoa' IDENTIFIED BY '3pes4';
 GRANT SELECT ON aula4exer6Evolucao4 . * TO 'pessoa';
