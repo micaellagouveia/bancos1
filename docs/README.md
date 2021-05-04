@@ -10,6 +10,7 @@
 ### [Aula 7 - Álgebra Relacional](aulas/aula7_algebra.md)
 ### [Aula 8 - Consistência, Dependência Funcional e Normalização](aulas/aula8_normalizacao.md)
 ### [Scripts](aulas/scripts.md)
+### [Aula 11 - Views](aulas/aula11_views.md)
 
 ## Estudos
 ### [Estudo V1](estudos/estudoV1.md)
