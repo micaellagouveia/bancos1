@@ -11,6 +11,7 @@
 ### [Aula 8 - Consistência, Dependência Funcional e Normalização](aulas/aula8_normalizacao.md)
 ### [Scripts](aulas/scripts.md)
 ### [Aula 11 - Views](aulas/aula11_views.md)
+### [Aula 12 - Transações](aulas/aula12_transacao.md)
 
 ## Estudos
 ### [Estudo V1](estudos/estudoV1.md)
