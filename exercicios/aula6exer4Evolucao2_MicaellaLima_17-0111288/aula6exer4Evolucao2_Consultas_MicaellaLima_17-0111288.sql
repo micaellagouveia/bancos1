@@ -32,4 +32,4 @@ WHERE trabalha.numeroProjeto = '10';
 
 -- E) Mostrar todos os dados dos dependentes consultando por qualquer parte do nome fornecido na pesquisa, além da matrícula funcional e o nome do empregado ao qual este dependente esta associado na empresa.
 SELECT * FROM DEPENDENTE JOIN EMPREGADO ON (DEPENDENTE.matriculaEmpregado = EMPREGADO.matriculaEmpregado)
-WHERE EMPREGADO.nomeComplato LIKE '%Daniel%';
+WHERE EMPREGADO.nomeCompleto LIKE '%Daniel%';
